@@ -21,7 +21,7 @@ public class LoadExampleData {
 
   private static final Logger log = LoggerFactory.getLogger(LoadExampleData.class);
 
-  private static LoadExampleData data = new LoadExampleData();
+  private static final LoadExampleData data = new LoadExampleData();
 
   private boolean runOnce;
 
@@ -49,7 +49,6 @@ public class LoadExampleData {
         insertTestCustAndOrders();
         transaction.commit();
       } catch (Throwable e) {
-        e.printStackTrace();
         log.error("Error seeding", e);
       }
     }

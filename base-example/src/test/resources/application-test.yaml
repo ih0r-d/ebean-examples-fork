@@ -1,6 +1,10 @@
 ebean:
   dumpMetricsOnShutdown: true
   dumpMetricsOptions: loc,sql,hash
+  logging:
+    sql:
+      comment: false
+
 
 #  dbSchema: myapp
 #  databasePlatformName: sqlserver17
